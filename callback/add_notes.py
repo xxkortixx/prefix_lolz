@@ -12,7 +12,7 @@ class Notes(StatesGroup):
     name_note = State()
     text = State()
 
-
+"""FSM для добавления заметки в бд"""
 @router.callback_query(F.data == "add_note")
 async def add_note(callback: types.CallbackQuery, state: FSMContext):
     await callback.message.answer("📝Введите название заметки")
@@ -32,7 +32,7 @@ async def state_text(message: types.Message, state: FSMContext):
     reply_markup = keyboard_done()
     await message.answer("Нажмите на кнопку что бы подтвердить действие", reply_markup=reply_markup)
 
-
+"""Кнопка подтверждения добавления заметки"""
 @router.callback_query(F.data == "done")
 async def button_done(callback: types.CallbackQuery, state: FSMContext):
     data = await state.get_data()
