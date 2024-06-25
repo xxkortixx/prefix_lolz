@@ -1,8 +1,8 @@
 #token 
-TOKEN = "6922552939:AAGzL2t3kSXDYrxbaGWQMDZw0LzIbtwph-M"
+TOKEN = "BOT TOKEN"
 
 #данные от бд
-HOST = "127.0.0.1"
-USER = "postgres"
-PASSWORD = "Xokkaqdo03"
-DB_NAME = "postgres"
+HOST = "your data"
+USER = "your data"
+PASSWORD = "your data"
+DB_NAME = "your data"
