@@ -1,6 +1,8 @@
 import asyncpg
+
 from aiogram.filters import Command
 from aiogram import types, Router
+
 from config import host, user, password, db_name
 from keyboards.inline.main_keyboard import keyboard_main
 
